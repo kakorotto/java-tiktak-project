@@ -1,6 +1,7 @@
 package login;
 
 import javafx.geometry.Insets;
+import javafx.scene.Cursor;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
@@ -152,6 +153,7 @@ public abstract class Login extends GridPane {
         button.setFont(new Font("Segoe UI", 18.0));
         GridPane.setMargin(button, new Insets(10.0, 40.0, 0.0, 0.0));
         button.setPadding(new Insets(8.0));
+        button.setCursor(Cursor.HAND);
 
         GridPane.setRowIndex(separator, 3);
         separator.setPrefWidth(318.0);
@@ -166,7 +168,7 @@ public abstract class Login extends GridPane {
         imageView.setNodeOrientation(javafx.geometry.NodeOrientation.INHERIT);
         imageView.setPickOnBounds(true);
         imageView.setPreserveRatio(true);
-        imageView.setImage(new Image(getClass().getResource(".././xo-logo.png").toExternalForm()));
+        imageView.setImage(new Image(getClass().getResource("xo-icon.png").toExternalForm()));
         GridPane.setMargin(imageView, new Insets(0.0));
 
         GridPane.setHalignment(button0, javafx.geometry.HPos.LEFT);
@@ -181,6 +183,7 @@ public abstract class Login extends GridPane {
         GridPane.setMargin(button0, new Insets(10.0, 0.0, 0.0, 40.0));
         button0.setFont(new Font("Segoe UI", 18.0));
         button0.setPadding(new Insets(8.0));
+        button0.setCursor(Cursor.HAND);
 
         getColumnConstraints().add(columnConstraints);
         getRowConstraints().add(rowConstraints);
