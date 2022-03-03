@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" hgap="10.0" maxHeight="-Infinity" maxWidth="400.0" minHeight="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-border-color: blue; -fx-background-color: white;" vgap="10.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="200.0" prefWidth="200.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="48.80001220703126" minHeight="31.999993896484384" prefHeight="31.999993896484384" />
+      <RowConstraints maxHeight="21.600006103515625" minHeight="4.79998779296875" prefHeight="4.799999999999997" />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints />
+      <RowConstraints minHeight="50.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints />
+   </rowConstraints>
+   <padding>
+      <Insets bottom="30.0" left="40.0" right="40.0" top="40.0" />
+   </padding>
+   <children>
+      <TextField maxWidth="200.0" minHeight="35.0" prefHeight="60.0" promptText="Enter your name" style="-fx-background-color: F7F3F2; -fx-background-radius: 10;" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+      <PasswordField maxWidth="200.0" minHeight="35.0" prefHeight="60.0" promptText="Enter your password" style="-fx-background-color: F7F3F2; -fx-background-radius: 10;" GridPane.halignment="CENTER" GridPane.rowIndex="11" />
+      <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" text="Login" textAlignment="JUSTIFY" textFill="#4262a1" GridPane.halignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="30.0" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" style="-fx-background-radius: 10; -fx-background-color: #335397;" text="Sign Up" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="13">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets right="40.0" top="10.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </Button>
+      <Separator prefWidth="318.0" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets top="-40.0" />
+         </GridPane.margin>
+      </Separator>
+      <ImageView cache="true" fitHeight="189.0" fitWidth="257.0" mouseTransparent="true" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+         <image>
+            <Image url="@.././xo-logo.png" />
+         </image>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </ImageView>
+      <Button maxHeight="30.0" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" style="-fx-background-radius: 10; -fx-background-color: #5577cf;" text="Login" textFill="WHITE" GridPane.halignment="LEFT" GridPane.rowIndex="13">
+         <GridPane.margin>
+            <Insets left="40.0" top="10.0" />
+         </GridPane.margin>
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </Button>
+   </children>
+</GridPane>
