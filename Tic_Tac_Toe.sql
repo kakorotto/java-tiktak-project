@@ -1,0 +1,1 @@
+SELECT * FROM tic_tac_toe.player;
