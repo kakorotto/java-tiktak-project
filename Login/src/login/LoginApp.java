@@ -1,16 +1,21 @@
 
 package login;
 
+import java.security.NoSuchAlgorithmException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import static login.SignUpController.toHexString;
 
 
 public class LoginApp extends Application {
-    
+    byte [] hashPasswowrd;
+    String stringHashPassword;
     @Override
     public void start(Stage primaryStage) throws Exception {
       //  Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
@@ -30,7 +35,13 @@ public class LoginApp extends Application {
         signuproot.sginUp.setOnAction(e -> {
             login.ConnctionToDatabase connection = new  login.ConnctionToDatabase();
             connection.makeConection();
-            connection.insertPlayerData(signuproot.userName.getText().toString(),signuproot.password.getText().toString(),signuproot.phone.getText().toString());
+            try {
+               hashPasswowrd=SignUpController.getSHA(signuproot.password.getText());
+               stringHashPassword=SignUpController.toHexString(hashPasswowrd);
+            } catch (NoSuchAlgorithmException ex) {
+                Logger.getLogger(LoginApp.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        connection.insertPlayerData(signuproot.userName.getText().toString(),stringHashPassword,signuproot.phone.getText().toString());
             primaryStage.setScene(loginscene);
             primaryStage.setTitle("Login");
                 });

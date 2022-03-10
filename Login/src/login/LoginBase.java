@@ -1,5 +1,8 @@
 package login;
 
+import java.security.NoSuchAlgorithmException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.geometry.Insets;
 import javafx.scene.Cursor;
@@ -43,7 +46,7 @@ public  class LoginBase extends GridPane {
     protected final ImageView imageView;
     protected final Button login;
     protected final Label validationLabel;
-
+   
     public LoginBase(Stage loginStage) {
 
         columnConstraints = new ColumnConstraints();
@@ -223,9 +226,17 @@ public  class LoginBase extends GridPane {
         getChildren().add(login);
         getChildren().add(validationLabel);
         login.setOnAction((ActionEvent event) -> {
+             byte [] hashLoginPasswowrd;
+             String stringLoginHashPassword = null;
             login.ConnctionToDatabase connection = new  login.ConnctionToDatabase();
             connection.makeConection();
-          if(  connection.checkLogin(username.getText(), password.getText())==true){
+            try {
+                hashLoginPasswowrd=SignUpController.getSHA(password.getText());
+                stringLoginHashPassword=SignUpController.toHexString(hashLoginPasswowrd);
+            } catch (NoSuchAlgorithmException ex) {
+                Logger.getLogger(LoginBase.class.getName()).log(Level.SEVERE, null, ex);
+            }   
+          if(  connection.checkLogin(username.getText(),stringLoginHashPassword)==true){
               System.out.println("true data");
           }
           else{
