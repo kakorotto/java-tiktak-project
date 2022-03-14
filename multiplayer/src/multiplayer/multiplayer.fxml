@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="multiplayer.MultiplayerController">
+    <stylesheets>
+        <URL value="@multiplayer.css" />
+    </stylesheets>
+   <styleClass>
+      <String fx:value="mainFxmlClass" />
+      <String fx:value="bodybg" />
+   </styleClass>
+   <children>
+      <ImageView fitHeight="80.0" fitWidth="130.0" layoutX="244.0" layoutY="27.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Gamexo/src/gamexo/logo.png" />
+         </image>
+      </ImageView>
+      <FlowPane layoutX="209.0" layoutY="161.0" prefHeight="123.0" prefWidth="191.0">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" opacity="0.55" prefHeight="40.0" prefWidth="63.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" opacity="0.55" prefHeight="40.0" prefWidth="63.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="10.0" mnemonicParsing="false" opacity="0.55" prefHeight="40.0" prefWidth="63.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" opacity="0.55" prefHeight="40.0" prefWidth="63.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="50.0" mnemonicParsing="false" opacity="0.55" prefHeight="40.0" prefWidth="63.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="50.0" mnemonicParsing="false" opacity="0.55" prefHeight="40.0" prefWidth="63.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="136.0" layoutY="50.0" mnemonicParsing="false" opacity="0.55" prefHeight="40.0" prefWidth="63.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="90.0" mnemonicParsing="false" opacity="0.55" prefHeight="40.0" prefWidth="63.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="90.0" mnemonicParsing="false" opacity="0.55" prefHeight="40.0" prefWidth="63.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </FlowPane>
+      <Button layoutX="322.0" layoutY="317.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="77.0" style="-fx-background-color: #373B44;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="209.0" layoutY="317.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="77.0" style="-fx-background-color: #373B44;" text="RESET" textFill="WHITE">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="102.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@3135715.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="124.0" layoutY="243.0" text="X">
+         <font>
+            <Font name="Arial Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="453.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@man.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="474.0" layoutY="243.0" text="O" textFill="#73c8a9">
+         <font>
+            <Font name="Arial Bold Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
