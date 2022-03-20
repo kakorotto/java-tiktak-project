@@ -1,0 +1,47 @@
+.root
+{
+    -fx-background-color: linear-gradient(to left, #373B44, #73C8A9);
+-fx-background-size: cover, auto;
+
+}
+
+#table{
+	-fx-opacity: 0.7;
+  -fx-font-size: 16px;
+  -fx-highlight-fill:green ;
+  -fx-highlight-text-fill: #000000;
+  -fx-text-fill: #004400;
+  -fx-effect: innershadow( three-pass-box , rgba(255,222,255,0.5) , 6, 0.0 , 2 , 1 );
+}
+
+
+#start-btn{
+    -fx-background-color: #373B44;
+    -fx-font-size: 18pt ;
+    -fx-text-fill: #73C8A9;
+    -fx-cursor:hand;
+}
+
+#stop-btn{
+    -fx-background-color: #373B44;
+    -fx-font-size: 18pt ;
+    -fx-text-fill: #73C8A9;
+    -fx-cursor:hand;
+}
+
+#start-btn:hover{
+    -fx-background-color: #73C8A9;
+    -fx-font-size: 18pt ;
+    -fx-text-fill: black;
+    -fx-cursor:hand;
+}
+
+#stop-btn:hover{
+    -fx-background-color: #73C8A9;
+    -fx-font-size: 18pt ;
+    -fx-text-fill: black;
+    -fx-cursor:hand;
+}
+
+
+
